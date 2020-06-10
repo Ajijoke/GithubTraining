@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2020 12:45:20 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="UBND3400L120"
+  DTS:CreatorName="UNIONBANK-NG\aaadesina"
+  DTS:DTSID="{B1C7C902-D9CE-47F0-8CB0-D35904BA56CF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.71"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{96063C85-630B-447A-9173-4B582EB796A1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>

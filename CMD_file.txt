@@ -1,0 +1,412 @@
+Microsoft Windows [Version 10.0.18362.535]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git add README.md
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git.Html.txt
+
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git.Html.txt
+        Git2.html.txt
+
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git add -A
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Git.Html.txt
+        new file:   Git2.html.txt
+        modified:   README.md
+
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git commit -m "Addition of two text files"
+[master 9686f8f] Addition of two text files
+ Committer: Adenike Adesina <AAADESINA@unionbankng.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 5 insertions(+)
+ create mode 100644 Git.Html.txt
+ create mode 100644 Git2.html.txt
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 433 bytes | 433.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ajijoke/GithubTraining.git
+   f779d87..9686f8f  master -> master
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git branch
+* master
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git branch NikeTest
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git branch
+  NikeTest
+* master
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git checkout Niketest
+Switched to branch 'Niketest'
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+On branch Niketest
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git.Html.txt
+        modified:   Git2.html.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git add -A
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+On branch Niketest
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Git.Html.txt
+        modified:   Git2.html.txt
+
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git commit -m "Another change"
+[Niketest 7599000] Another change
+ Committer: Adenike Adesina <AAADESINA@unionbankng.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 32 insertions(+), 2 deletions(-)
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git push
+fatal: The current branch Niketest has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Niketest
+
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining> git push --set-upstream origin Niketest
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 402 bytes | 402.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Niketest' on GitHub by visiting:
+remote:      https://github.com/Ajijoke/GithubTraining/pull/new/Niketest
+remote:
+To https://github.com/Ajijoke/GithubTraining.git
+ * [new branch]      Niketest -> Niketest
+Branch 'Niketest' set up to track remote branch 'Niketest' from 'origin'.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Microsoft Windows [Version 10.0.18362.535]
+'Microsoft' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>(c) 2019 Microsoft Corporation. All rights reserved.
+2019 was unexpected at this time.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining> git status
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Your branch is up to date with 'origin/master'.
+'Your' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes not staged for commit:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git add <file>..." to update what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore <file>..." to discard changes in working directory)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        modified:   README.md
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>no changes added to commit (use "git add" and/or "git commit -a")
+'no' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git add README.md
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Your branch is up to date with 'origin/master'.
+'Your' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore --staged <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        modified:   README.md
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Your branch is up to date with 'origin/master'.
+'Your' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore --staged <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        modified:   README.md
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes not staged for commit:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git add <file>..." to update what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore <file>..." to discard changes in working directory)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        modified:   README.md
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Untracked files:
+'Untracked' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git add <file>..." to include in what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        Git.Html.txt
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Your branch is up to date with 'origin/master'.
+'Your' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore --staged <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        modified:   README.md
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes not staged for commit:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git add <file>..." to update what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore <file>..." to discard changes in working directory)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        modified:   README.md
+'modified:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Untracked files:
+'Untracked' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git add <file>..." to include in what will be committed)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        Git.Html.txt
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        Git2.html.txt
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git add -A
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>C:\Users\aaadesina\Documents\GITHUB\GithubTraining>git status
+'C:\Users\aaadesina\Documents\GITHUB\GithubTraining' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>On branch master
+'On' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Your branch is up to date with 'origin/master'.
+'Your' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>Changes to be committed:
+'Changes' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>  (use "git restore --staged <file>..." to unstage)
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        new file:   Git.Html.txt
+'new' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\aaadesina\Documents\GITHUB\GithubTraining>        new file:   Git2.html.txt
+'new' is not recognized as an internal or external command,
+
+                                                                                                                        [new
+
+# with '#' will be ignored, and an empty message aborts the commit.                                                     branch]
+#
+# On branch Niketest                                                                                                    Niketest
+# Your branch is up to date with 'origin/Niketest'.
+#                                                                                                                       ->
+# Changes to be committed:
+#       modified:   Git.Html.txt                                                                                        Niketest
+#       modified:   Git2.html.txt
+#                                                                                                                       Branch
+# Untracked files:
+#       git                                                                                                             'Niketest'
+#
+~                                                                                                                       set                                             ~                                                                                                                                                                       ~                                                                                                                       up                                              ~                                                                                                                                                                       ~                                                                                                                       to                                              ~                                                                                                                                                                       ~                                                                                                                       track                                           ~                                                                                                                                                                       ~                                                                                                                       remote                                          ~                                                                                                                                                                       ~                                                                                                                       branch                                          ~                                                                                                                                                                       ~                                                                                                                       'Niketest'                                      ~                                                                                                                                                                       ~                                                                                                                       from                                            ~                                                                                                                                                                       ~                                                                                                                       'origin'.                                       ~                                                                                                                                                                       ~                                                                                                                                                                       ~                                                                                                                       C:\Users\aaadesina\Documents\GITHUB\GithubTraining>f
